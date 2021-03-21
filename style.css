@@ -35,11 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .education, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.education .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background-image: url(images/banner.png);
+    background: linear-gradient(transparent, black 99%), url(images/photo1.jpg);
     background-repeat:no-repeat;
     background-position: center center;
     height: 100vh;
@@ -174,7 +174,11 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    z-index:1;
 }
+
+
+
 .home .max-width{
   width: 100%;
   display: flex;
@@ -183,12 +187,13 @@ section .title::after{
   margin-right: 0;
 }
 .home .home-content .text-1{
-    font-size: 27px;
+    font-size: 30px;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -259,6 +264,52 @@ section .title::after{
     background: none;
 }
 
+/* services section styling */
+.education, .teams{
+    color:#fff;
+    background: #111;
+}
+.education .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.education .title::after,
+.teams .title::after{
+    background: #111;
+    content: "where did i study";
+}
+.education .serv-content .card{
+    width: calc(50% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.education .serv-content .card:hover{
+    background: #739900;
+}
+.education .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.education .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.education .serv-content .card i{
+    font-size: 50px;
+    color: #739900;
+    transition: color 0.3s ease;
+}
+.education .serv-content .card:hover i{
+    color: #fff;
+}
+.education .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -327,7 +378,7 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .education .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -351,7 +402,7 @@ section .title::after{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .education .serv-content .card{
         width: 100%;
     }
 }
@@ -386,3 +437,4 @@ section .title::after{
         line-height: 38px;
     }
 }
+

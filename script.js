@@ -35,13 +35,15 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Ruixin Tang"],
-        typeSpeed: 30,
+        strings: ["My name is Ruixin Tang.",],
+        typeSpeed: 60,
         loop: false
     });
-    var typed2 = new Typed(".typing1", {
-    strings: ["唐瑞欣"],
-    typeSpeed: 100,
-    loop: false
+
+        var typed = new Typed(".typing1", {
+        strings: ["Nice to meet you.",  "I am a programmer.", ],
+        typeSpeed: 60,
+        backSpeed: 30,
+        loop: true
     });
 });
