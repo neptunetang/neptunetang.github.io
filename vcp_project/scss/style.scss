@@ -1,0 +1,33 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar-toggler {
+  display: block !important;
+  border: none;
+}
+
+input[type="range"]:not(#scaleRange):not(#configScaleRange):not(#configGridRange) {
+  width: 100%;
+}
+
+
+.render {
+  width: 600px;
+  height: 600px;
+
+  background-color: rgb(24, 24, 29);
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.controls {
+  button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  label[for="scaleRange"], label[for="configScaleRange"] {
+
+    margin-bottom: 0.15em;
+  }
+}

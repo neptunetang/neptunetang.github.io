@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <!-- CSS
+    edit      style.scss in /scss to make changes
+    run       npm run watch:sass to actively update style.css
+    includes  bootstrap 4
+  -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/0c2c0f92dc.js" crossorigin="anonymous"></script>
+</head>
+<body data-root="${rootContext}">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container p-4">
+
+    <!-- Burger menu -->
+    <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <!-- Branding -->
+    <span class="h2"><i class="fas fa-shopping-basket"></i> Supermarket simulation</span>
+
+    <!-- navbar content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- empty menu? -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-lg-5 p-2">
+  <div class="row justify-content-lg-center">
+    <div class="col-lg-4 d-flex flex-column px-5">
+      <div class="row">
+        <div class="col">
+          <form>
+            <div for="maxPersonPerSiteSlider" class="form-label">Maximum allowed persons in the supermarket</div>
+            <input type="range" class="form-range" min="10" max="50" value="10" step="5" id="maxPersonPerSiteSlider">
+            <div class="value" id="maxPersonPerSiteOutput">
+              10 in the supermarket
+            </div>
+            <div class="alert alert-warning py-1 px-2">Be careful when setting this to a large number. The program may slow down.</div>
+          </form>
+        </div>
+        <div class="col">
+          <form>
+            <div for="numberOfSickPeopleEnteredSlider" class="form-label">Number of sick people out of 10</div>
+            <input type="range" min="1" max="9" value="1" class="slider form-range" id="numberOfSickPeopleEnteredSlider">
+            <div class="value" id="numberOfSickPeopleEnteredOutput">
+              1 out of 10
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col">
+          <form>
+            <div for="shelvesStockSlider" class="form-label">Number of shelves</div>
+            <input type="range" class="form-range" min="10" max="20" value="10" step="5" id="shelvesSlider">
+            <div class="value" id="shelvesOutput">
+              10 shelves in total
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row py-3 mb-auto">
+        <div class="col px-5">
+          <form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="shoppingCartCheck">
+              <label class="form-check-label" for="shoppingCartCheck">Social Distance</label>
+            </div>
+          </form>
+        </div>
+        <div class="col px-5">
+          <form>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="maskWearCheck">
+              <label class="form-check-label" for="maskWearCheck">Wearing mask</label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col">
+          <button type="button" class="btn btn-primary p-3" id="restartSimulation"><i class='fas fa-play'></i> Start Simulation</button>
+
+          <a href="designer.html" type="button" class="btn btn-secondary p-3" >
+            <i class="fas fa-sliders-h"></i> Configure
+          </a>
+          <p class="py-2 px-3"><a href="#" class="link-secondary">Need help?</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <div class="render card" id="container">
+        <canvas id="render" style="width:100%; height:100%;"></canvas>
+      </div>
+      <div class="controls">
+        <div class="row justify-content-between px-3">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-sm" id="continue"><i class='fas fa-play'></i> play</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="pause"><i class="fas fa-pause"></i> pause</button>
+            <button type="button" class="btn btn-danger btn-sm disabled" id="reset"><i class="fas fa-trash-alt"></i> reset</button>
+          </div>
+          <form class="d-flex align-items-center">
+            <label for="scaleRange" class="form-label">Scale <span id="scaleRangeVal">100%</span></label>
+            <input type="range" class="form-range ml-2" min="50" max="150" value="100" step="10" id="scaleRange">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+let rootContext = document.body.getAttribute("data-root");
+</script>
+<script src="lib/astar.js"></script>
+<script src="js/worker.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/localStorage.js"></script>
+<script src="js/storeMap.js"></script>
+<script src="js/storeHeatmap.js"></script>
+<script src="js/util.js"></script>
+<script src="js/config.js"></script>
+<script src="lib/heatmap.js"></script>
+<script src="lib/matter.js"></script>
+<script src="js/actor.js"></script>
+<script src="js/place.js"></script>
+<script src="js/supermarket.js"></script>
+<script src="js/person.js"></script>
+<script src="js/target.js"></script>
+<script src="js/coronasim.js"></script>
+<script src="js/wall.js"></script>
+<script src="index.js"></script>
+<script src="js/designShelf.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "heatmap.js": "^2.0.5",
+    "matter-js": "^0.16.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/style.scss -o css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  }
+}

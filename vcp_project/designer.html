@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/0c2c0f92dc.js" crossorigin="anonymous"></script>
+  <style media="screen">
+    canvas {
+      background-color: rgb(24, 24, 29);
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container p-4">
+
+    <!-- Burger menu -->
+    <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <!-- Branding -->
+    <span class="h2"><i class="fas fa-shopping-basket"></i> Supermarket simulation</span>
+
+    <!-- navbar content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- empty menu? -->
+      </ul>
+    </div>
+</nav>
+<div class="container p-5">
+  <div class="row">
+    <div class="col">
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <div class="controls d-flex justify-content-end">
+        <form class="d-flex justify-content-end pr-2">
+          <label for="configScaleRange" class="form-label">Scale: <span id="configScaleRangeVal">100%</span></label>
+          <input type="range" class="form-range ml-2" min="50" max="150" value="100" step="10" id="configScaleRange">
+        </form>
+        <form class="d-flex justify-content-end pr-2">
+          <label for="configGridRange" class="form-label">Grid size: <span id="configGridRangeVal">100 cm</span></label>
+          <input type="range" class="form-range ml-2" min="10" max="200" value="100" step="10" id="configGridRange">
+        </form>
+      </div>
+    </div>
+    <div class="col d-flex flex-column p-5">
+      <div class="row mb-4 items">
+        <button type="button" name="button" id="shelfBtn" class="btn btn-primary mr-2">Draw shelf</button>
+        <button type="button" name="button" id="moveBtn" class="btn btn-primary mr-2">Move shelf</button>
+        <button type="button" name="button" id="delBtn" class="btn btn-danger">Delete shelf</button>
+      </div>
+      <div class="row mb-4">
+        <button type="button" name="button" id="createWallBtn" class="btn btn-primary mr-2">Create walls</button>
+        <button type="button" name="button" id="delWallBtn" class="btn btn-danger mr-2">Delete walls</button>
+      </div>
+      <div class="row mb-auto">
+        <button type="button" name="button" id="placeEntrance" class="btn btn-secondary mr-2">Place entrance</button>
+        <button type="button" name="button" id="placeExit" class="btn btn-secondary mr-2">Place exit</button>
+      </div>
+      <div class="row">
+        <a href="index.html" type="button" name="button" id="save" class="btn btn-primary">Save</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="js/localStorage.js"></script>
+<script src="js/util.js"></script>
+<script src="js/designer.js"></script>
+</html>
