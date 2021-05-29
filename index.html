@@ -7,7 +7,6 @@
     <title>HelloWorld, HelloRuixin</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -15,6 +14,21 @@
 
 </head>
 <body>
+
+    <div class="preloader">
+        <div class="preloader-after"></div>
+        <div class="preloader-before"></div>
+        <div class="preloader-block">
+            <div class="title">Hello world, Hello Ruixin</div>
+            <div class="percent">0</div>
+            <div class="loading">loading...</div>
+        </div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+    </div>
+
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -25,6 +39,7 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#education" class="menu-btn">Education</a></li>
+                <li><a href="#volunteer" class="menu-btn">Volunteer</a></li>
                 <li><a href="vcp_project/index.html">Project</a></li>
 
             </ul>
@@ -42,7 +57,7 @@
           <div class="row">
             <div class="home-content">
                 <div class="text-1">Hello!</div>
-                <div class="text-3"><span class="typing1"</span></div>
+                <div class="text-3"><span class="typing1"></span></div>
                 <div class="text-2"><span class="typing"></span></div>
             </div>
           </div>
@@ -55,12 +70,14 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="" alt="MY PHOTO">
+                    <img src="images/photo2.jpg" alt="MY PHOTO">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Ruixin</div>
-                    <p>SOMETHING TO BE FINISHED</p>
-<!--                    <a href="#">Download CV</a>-->
+                    <div class="text">Hi there, my name is Ruixin. </div>
+                    <p>I would describe myself as a tech-lover, a person who is eager to see different up-to-date new technology applying into practice. <br>
+                    I am currently diving into the data analysis field and would like to learn more about the career as a Data Analyst in the future.<br>
+                    Learning Matlab and R as well as polishing my Python skills in progress.</p>
+                    <a href="document/CV_Tang.pdf">Download CV</a>
                 </div>
             </div>
         </div>
@@ -94,6 +111,11 @@
 
     <a href="vcp_project/index.html">Project</a>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="plugins/plugins.js"></script>
+    <script src="plugins/dsn-grid.js"></script>
+    <script src="plugins/custom.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
