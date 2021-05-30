@@ -561,3 +561,6 @@ section .title::after{
     opacity: 0;
   }
 }
+.hidden {
+  display: none !important;
+}
