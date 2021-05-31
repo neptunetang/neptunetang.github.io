@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c4f6606-c5d8-48aa-9af9-c45fc82b8314" name="Default Changelist" comment="">
+    <list default="true" id="6c4f6606-c5d8-48aa-9af9-c45fc82b8314" name="Default Changelist" comment="fix the bug that no operation can be done after loading, by add a hidden tag to the preload container and set !important for hidden class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../mood10bot" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,8 +44,17 @@
       <option name="presentableId" value="Default" />
       <updated>1616085141769</updated>
       <workItem from="1616085145921" duration="5089000" />
-      <workItem from="1622413951801" duration="736000" />
+      <workItem from="1622413951801" duration="1500000" />
+      <workItem from="1622456731836" duration="25000" />
     </task>
+    <task id="LOCAL-00001" summary="fix the bug that no operation can be done after loading, by add a hidden tag to the preload container and set !important for hidden class">
+      <created>1622414826432</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622414826432</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,5 +71,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix the bug that no operation can be done after loading, by add a hidden tag to the preload container and set !important for hidden class" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the bug that no operation can be done after loading, by add a hidden tag to the preload container and set !important for hidden class" />
   </component>
 </project>
