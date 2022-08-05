@@ -276,7 +276,7 @@ section .title::after{
 .education .title::after,
 .teams .title::after{
     background: #111;
-    content: "where did i study";
+    content: "-Where I have been-";
 }
 .education .serv-content .card{
     width: calc(50% - 20px);

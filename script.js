@@ -6,7 +6,7 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
+
         // scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 
         var typed = new Typed(".typing1", {
-        strings: ["Nice to meet you.",  "I am a programmer.", ],
+        strings: ["Nice to meet you.",  "I love data.", ],
         typeSpeed: 60,
         backSpeed: 30,
         loop: true
