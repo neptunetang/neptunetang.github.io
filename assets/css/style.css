@@ -7240,6 +7240,19 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-weight: 600;
 }
 
+.our-news .item-new .content .cta1 {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+.our-news .item-new .content .cta1 a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
 .v-light .our-news .item-new .content .cta a {
   color: #000;
 }
