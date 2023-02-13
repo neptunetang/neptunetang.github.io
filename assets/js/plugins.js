@@ -127,7 +127,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 
  * Club GreenSock members, the software agreement that was issued with your membership.
 
- *
+ * 
 
  * @author: Jack Doyle, jack@greensock.com
 
@@ -139,7 +139,7 @@ var _gsScope="undefined"!=typeof module&&module.exports&&"undefined"!=typeof glo
 /*!
 
 
- *
+ * 
 
  * validators
 
@@ -316,45 +316,3 @@ $.fn.YouTubePopUp = function (options) {
 
 
 };
-
-/*-----------------------------------------------------------------------------------
-
-	Template Name:
-	Template URI:
-	Description:
-	Author: design_grid
-	Author URI:
-	Version: 1.0
-
------------------------------------------------------------------------------------*/
-
-/* ----------------------------------------------------------------
-			[ All Css Plugins & Helper Classes File ]
------------------------------------------------------------------*/
-
-/* == bootstrap == */
-@import url("plugins/bootstrap-grid.min.css");
-
-/* == fontawesome == */
-@import url("plugins/fontawesome-all.min.css");
-
-/* == animate == */
-@import url("plugins/animate.css");
-
-/* == slick == */
-@import url("plugins/slick.css");
-
-/* == Swiper == */
-@import url("plugins/swiper.min.css");
-
-/* == aos == */
-@import url("plugins/aos.css");
-
-/* == justifiedGallery == */
-@import url("plugins/justifiedGallery.min.css");
-
-/* == magnific popup == */
-@import url("plugins/magnific-popup.css");
-
-/* == magnific popup == */
-@import url("plugins/youtubepopup.css");

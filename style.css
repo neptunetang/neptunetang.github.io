@@ -28,7 +28,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -263,7 +263,7 @@ section .title::after{
 }
 
 /* services section styling */
-.education{
+.education, .Fun{
     color:#fff;
     background: #111;
 }
@@ -271,9 +271,9 @@ section .title::after{
 .teams .title::before{
     background: #fff;
 }
-.education .title::after,
-.teams .title::after{
+.education .title::after{
     background: #111;
+    content: "Where I have been"
 }
 .education .serv-content .card{
     width: calc(50% - 20px);
@@ -310,7 +310,12 @@ section .title::after{
 
 /* project start */
 .Project .title::after{
-    content: "something interesting about my work";
+    content: "Something interesting about my work";
+}
+
+.Fun .title::after{
+  background: #111;
+  content: "This is my life"
 }
 
 
@@ -567,4 +572,3 @@ section .title::after{
 .hidden {
   display: none !important;
 }
-
