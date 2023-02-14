@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 
+audio{
+    background-color: #222;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
