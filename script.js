@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["My name is Ruixin Tang.",],
+        strings: ["My name is Ruixin Tang",],
         typeSpeed: 100,
         loop: false
     });
 
         var typed = new Typed(".typing1", {
         strings: ["Nice to meet you",  "Unlock the value from resources", "I speak English",
-                "I speak Chinese", "I speak music", "I speak Python", "Nintendo No.1"],
+                "I speak Chinese", "I speak Music", "I speak Python", "Nintendo No.1"],
         typeSpeed: 80,
         backSpeed: 60,
         loop: true
